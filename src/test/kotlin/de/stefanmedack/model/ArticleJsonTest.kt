@@ -20,7 +20,7 @@ class ArticleJsonTest {
     }
 
     @Test
-    fun `Parse empty json to Article`() {
+    fun `Parse empty json to Article should not crash but be null`() {
         adapter.fromJson("{}").shouldBeNull()
     }
 
@@ -30,7 +30,7 @@ class ArticleJsonTest {
     }
 
     @Test
-    fun `Parse minimal valid json with all minimal ContentModules to Article`() {
+    fun `Parse minimal valid json with ContentModules to Article`() {
         adapter.fromJson(minimalArticleContentJson) shouldEqual minimalArticleContentInstance
     }
 
