@@ -1,0 +1,42 @@
+buildscript {
+
+    ext {
+        junitVersion = "4.12"
+        kluentVersion = "1.30"
+        kotlinVersion = "1.1.51"
+        moshiVersion = "1.5.0"
+    }
+
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+    }
+}
+
+apply plugin: 'kotlin'
+apply plugin: 'application'
+
+defaultTasks 'run'
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+
+    // moshi
+    implementation "com.squareup.moshi:moshi-adapters:$moshiVersion"
+    implementation "com.squareup.moshi:moshi-kotlin:$moshiVersion"
+
+    testImplementation "junit:junit:$junitVersion"
+    testImplementation "org.amshove.kluent:kluent:$kluentVersion"
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = "4.1"
+}
