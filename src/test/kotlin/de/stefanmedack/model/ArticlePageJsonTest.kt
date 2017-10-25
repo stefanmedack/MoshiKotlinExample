@@ -1,8 +1,7 @@
-package com.ajnsnewmedia.kitchenstories.ultron.model.article
+package de.stefanmedack.model
 
 import com.squareup.moshi.JsonAdapter
 import de.stefanmedack.MoshiBuilder.moshiInstance
-import de.stefanmedack.model.ArticlePage
 import de.stefanmedack.util.*
 import org.amshove.kluent.shouldEqual
 import org.junit.Before

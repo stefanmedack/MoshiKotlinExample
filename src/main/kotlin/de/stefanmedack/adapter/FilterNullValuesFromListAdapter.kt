@@ -1,4 +1,4 @@
-package com.ajnsnewmedia.kitchenstories.ultron.adapter
+package de.stefanmedack.adapter
 
 import com.squareup.moshi.*
 import java.io.IOException
