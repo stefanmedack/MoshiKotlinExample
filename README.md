@@ -1,5 +1,24 @@
 # MoshiKotlinExample
+
 Example project on how to leverage Kotlin for better JSON parsing.
+This repo is the side product of a talk presented at Berlin Kotlin Meetup and Berlin Android Meetup.
+The plan is to add more examples and tips on parsing JSON with Moshi into Kotlin classes.
+
+## Structure
+
+Currently this repo serves as an example project on how to enforce nullability, 
+ make use of default constructor values and a few more features Kotlin provides and how to use them in your models.
+For a better understanding of the code the slides and especially the blog post linked below should help.
+
+Basic structure briefly explained:
+
+- main/MoshiBuilder - singleton that provides an instance of `Moshi` with all its parsing adapters 
+- main/adapter/ - a package with helpful MoshiAdapters
+- main/model/ - example models to showcase what is possible
+
+The project also contains tests to showcase the general functionality.
+Playing around with the adapters while having a look on the tests 
+ is probably the best way to get a feeling of what this repo is all about ;)
 
 ## Links
 
