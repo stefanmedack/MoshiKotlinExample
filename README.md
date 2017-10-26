@@ -1,6 +1,6 @@
 # MoshiKotlinExample
 
-Example project on how to leverage Kotlin for better JSON parsing.
+Example project on how to leverage Kotlin for better JSON parsing using [Moshi][moshi].
 This repo is the side product of a talk presented at Berlin Kotlin Meetup and Berlin Android Meetup.
 The plan is to add more examples and tips on parsing JSON with Moshi into Kotlin classes.
 
@@ -45,6 +45,7 @@ Playing around with the adapters while having a look on the tests
     See the License for the specific language governing permissions and
     limitations under the License.
 
+[moshi]: https://github.com/square/moshi/
 [blog_post]: https://engineering.kitchenstories.io/data-classes-and-parsing-json-a-story-about-converting-models-to-kotlin-caf8a599df9e
 [slides]: https://speakerdeck.com/zonic03/data-classes-and-parsing-json-a-story-about-converting-models-to-kotlin
 [stefan]: https://twitter.com/Zonic03
