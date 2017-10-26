@@ -34,7 +34,7 @@ class ArticlePageJsonTest {
 
     @Test
     fun `Parse json with broken articles to filtered ArticlePage`() {
-        val data = adapter.fromJson("""{
+        val articlePage = adapter.fromJson("""{
             "data": [
                 $minimalArticleJson,
                 null,
@@ -42,7 +42,7 @@ class ArticlePageJsonTest {
                 {"id": "only_id_is_set"},
                 $minimalArticleContentJson
             ]
-        }""")!!.data
-        data.size shouldEqual 2
+        }""")
+        articlePage!!.data.size shouldEqual 2
     }
 }

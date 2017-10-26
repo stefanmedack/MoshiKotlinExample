@@ -19,11 +19,6 @@ class ArticleJsonTest {
     }
 
     @Test
-    fun `Parse empty json to Article should not crash but be null`() {
-        adapter.fromJson("{}").shouldBeNull()
-    }
-
-    @Test
     fun `Parse minimal valid json to Article`() {
         adapter.fromJson(minimalArticleJson) shouldEqual minimalArticleInstance
     }
@@ -37,4 +32,10 @@ class ArticleJsonTest {
     fun `Parse full valid json to Article`() {
         adapter.fromJson(fullArticleJson) shouldEqual fullArticleInstance
     }
+
+    @Test
+    fun `Parse empty json to Article should not crash but be null`() {
+        adapter.fromJson("{}").shouldBeNull()
+    }
+
 }
