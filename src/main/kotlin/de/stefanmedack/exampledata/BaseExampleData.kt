@@ -1,4 +1,4 @@
-package de.stefanmedack.util
+package de.stefanmedack.exampledata
 
 import de.stefanmedack.model.Image
 import de.stefanmedack.model.PageLinks
@@ -52,7 +52,7 @@ val fullAuthorJson = """
 {
     "username": "Morty",
     "id": "UNKNOWN",
-    "user_image": $imageJson
+    "user_image": ${imageJson}
 }
 """
 val fullAuthorInstance = User(username = "Morty", id = "UNKNOWN", userImage = imageInstance)
@@ -65,7 +65,7 @@ val videoJson = """
 {
     "id": "id",
     "video_url": "video_url",
-    "preview_image": $imageJson
+    "preview_image": ${imageJson}
 }
 """
 val videoInstance = Video(videoUrl = "video_url", previewImage = imageInstance)

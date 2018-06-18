@@ -1,4 +1,4 @@
-package de.stefanmedack.util
+package de.stefanmedack.exampledata
 
 import de.stefanmedack.model.Article
 import de.stefanmedack.model.ArticlePage
@@ -12,8 +12,8 @@ val minimalArticleJson = """
 {
     "id": "id",
     "title": "title",
-    "cell_image": $imageJson,
-    "author": $minimalAuthorJson
+    "cell_image": ${imageJson},
+    "author": ${minimalAuthorJson}
 }
 """
 val minimalArticleInstance = Article(
@@ -27,8 +27,8 @@ val minimalArticleContentJson = """
 {
     "id": "id",
     "title": "title",
-    "cell_image": $imageJson,
-    "author": $minimalAuthorJson,
+    "cell_image": ${imageJson},
+    "author": ${minimalAuthorJson},
     "content": [
         { "content": "Content Text" },
         { "content": "Content Text" }
@@ -51,12 +51,12 @@ val fullArticleJson = """
     "id": "id",
     "title": "Data classes and parsing JSON",
     "subtitle": "A story about converting Models to Kotlin",
-    "cell_image": $imageJson,
-    "author": $fullAuthorJson,
+    "cell_image": ${imageJson},
+    "author": ${fullAuthorJson},
     "like_count": 42,
     "url": "url",
-    "published_at": $exampleDateJson,
-    "video": $videoJson,
+    "published_at": ${exampleDateJson},
+    "video": ${videoJson},
     "content": [
         { "content": "Content Text" },
         { "content": "Content Text" }
@@ -85,7 +85,7 @@ val fullArticleInstance = Article(
 val minimalArticlePageJson = """
 {
     "data": [
-        $minimalArticleJson
+        ${minimalArticleJson}
     ]
 }
 """
@@ -93,10 +93,10 @@ val minimalArticlePageInstance = ArticlePage(data = listOf(minimalArticleInstanc
 
 val fullArticlePageJson = """
 {
-    $linksJson,
+    ${linksJson},
     "data": [
-        $minimalArticleContentJson,
-        $fullArticleJson
+        ${minimalArticleContentJson},
+        ${fullArticleJson}
     ]
 }
 """

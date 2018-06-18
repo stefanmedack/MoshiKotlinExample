@@ -2,7 +2,12 @@ package de.stefanmedack.model
 
 import com.squareup.moshi.JsonAdapter
 import de.stefanmedack.MoshiBuilder.moshiInstance
-import de.stefanmedack.util.*
+import de.stefanmedack.exampledata.fullArticleInstance
+import de.stefanmedack.exampledata.fullArticleJson
+import de.stefanmedack.exampledata.minimalArticleContentInstance
+import de.stefanmedack.exampledata.minimalArticleContentJson
+import de.stefanmedack.exampledata.minimalArticleInstance
+import de.stefanmedack.exampledata.minimalArticleJson
 import org.amshove.kluent.shouldBeNull
 import org.amshove.kluent.shouldEqual
 import org.junit.Before
