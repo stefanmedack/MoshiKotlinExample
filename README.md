@@ -12,7 +12,7 @@ For a better understanding of the code the slides and especially the blog post l
 
 Basic structure briefly explained:
 
-- main/MoshiBuilder - singleton that provides an instance of `Moshi` with all its parsing adapters 
+- main/MoshiBuilder - singleton that provides an instance of `Moshi` with all its parsing adapters
 - main/adapter/ - a package with helpful MoshiAdapters
 - main/model/ - example models to showcase what is possible
 
