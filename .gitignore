@@ -20,3 +20,5 @@ ajnsnewmedia_fastlane_access.json
 ajnsnewmedia_keystore.jks
 
 !.idea/codeStyleSettings.xml
+
+out/
