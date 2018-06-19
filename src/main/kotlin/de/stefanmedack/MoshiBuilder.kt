@@ -1,8 +1,7 @@
 package de.stefanmedack
 
-import com.squareup.moshi.KotlinJsonAdapterFactory
 import com.squareup.moshi.Moshi
-import com.squareup.moshi.Rfc3339DateJsonAdapter
+import com.squareup.moshi.adapters.Rfc3339DateJsonAdapter
 import de.stefanmedack.adapter.DefaultOnDataMismatchAdapter
 import de.stefanmedack.adapter.FilterNullValuesFromListAdapter
 import de.stefanmedack.model.Article
@@ -17,6 +16,5 @@ object MoshiBuilder {
 
                 .add(FilterNullValuesFromListAdapter.newFactory(Article::class.java))
 
-                .add(KotlinJsonAdapterFactory())
                 .build()
 }

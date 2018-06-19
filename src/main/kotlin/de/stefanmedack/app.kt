@@ -1,6 +1,6 @@
 package de.stefanmedack
 
-import de.stefanmedack.exampledata.minimalArticleJson
+import de.stefanmedack.exampledata.ArticleExampleData.minimalArticleJson
 import de.stefanmedack.model.Article
 
 fun main(args: Array<String>) {
